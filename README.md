@@ -38,4 +38,14 @@ Deploy the UI somewhere, like maybe vercel:
 npx vercel
 ```
 
-Note that you will have to configure the `serverOrigin` flag to `Reflect` to point to the production server with a `wss` protocol, so like `wss://reflect-starter-vanilla.my-user.reflect-server.net`.
+Note that you will have to configure the `serverOrigin` flag to `Reflect` to point to the production server with a `wss` protocol:
+
+```js
+const r = new Reflect({
+  userID: "someUser",
+  roomID: "myRoom",
+  // Whatever publish printed out --  note `wss` protocol
+  socketOrigin: "wss://reflect-starter-vanilla.rocicorp-bot.reflect-server.net",
+  mutators,
+});
+```
