@@ -22,7 +22,7 @@ In another shell, start the UI dev server:
 npm run dev
 ```
 
-Open the UI in two tabs and click the increment button.
+Open http://localhost:5173/ in two tabs and click the increment button.
 
 ## Deploy
 
