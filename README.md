@@ -22,6 +22,8 @@ In another shell, start the UI dev server:
 npm run dev
 ```
 
+Open the UI in two tabs and click the increment button.
+
 ## Deploy
 
 Deploy the Reflect server to relect.net:
@@ -36,4 +38,4 @@ Deploy the UI somewhere, like maybe vercel:
 npx vercel
 ```
 
-Note that you will have to configure the `serverOrigin` flag to `Reflect` to point to the production server with a `wss` protocol, so like `wss://my-app.my-user.reflect.net/`.
+Note that you will have to configure the `serverOrigin` flag to `Reflect` to point to the production server with a `wss` protocol, so like `wss://reflect-starter-vanilla.my-user.reflect-server.net`.
